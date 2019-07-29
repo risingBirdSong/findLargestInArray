@@ -1,0 +1,112 @@
+.intro {
+  background-color: khaki;
+  margin: 0 auto;
+  margin-top: -5%;
+  background-image: url("https://imgs.mongabay.com/wp-content/uploads/sites/20/2016/02/02180633/IMG_1340.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95%;
+}
+
+html {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.intro h1{
+  font-size: 300px;
+}
+
+.intro h3 {
+  font-size: 60px;
+  text-align: center;
+  padding: 1em;
+}
+
+.intro h2 {
+  font-size: 100px;
+}
+
+.intro h1, h2, h3 {
+  opacity: .7;
+}
+
+.cat_pics{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 22em;
+  
+}
+
+.cat_pics * {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: -10%;
+}
+
+.cat_pics img {
+  border : 2px solid goldenrod;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.lion {
+  height: 200px;
+}
+img {
+  height: 100px;
+}
+
+
+.codeblock {
+  font-size: xx-large;
+}
+
+.interaction {
+  display: flex;
+  width: 100%;
+  height: 2em;
+  background-color: khaki;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  color: purple;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.interaction button {
+  height: 5em;
+  vertical-align: middle;
+  background-color: bisque;
+  color: purple;
+  font-size: large;
+  margin-right: 10px;
+
+}
+
+.interaction button, form{
+border : gold 2px solid;
+padding: 20px;
+border-radius: 5px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.interaction input{
+  border-radius: 5px;
+  background-color: bisque;
+  height: 2.5em;
+}
+
+.cheetah_pic {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  transform: scaleX(-1);
+  margin-top: -32%;
+  margin-left: 65%;
+  border : 3px solid khaki;
+  padding: 7px;
+  border-radius: 7px;
+}

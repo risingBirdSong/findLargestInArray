@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/default.min.css"
+      href="shades-of-purple.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  </head>
+  <body>
+    <link href="shades-of-purple.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
+    <div class="intro">
+      <h3 class="intro_headline">Find Largest</h3>
+      <div class="cat_pics">
+        <h1>[</h1>
+
+        <a
+          href="https://s286.photobucket.com/user/kibalover481397/media/animales004.jpg.html"
+          target="_blank"
+          ><img
+            src="https://i286.photobucket.com/albums/ll84/kibalover481397/animales004.jpg"
+            border="0"
+            alt="cat photo animales004.jpg"
+        /></a>
+        <h2>,</h2>
+        <a
+          href="https://s946.photobucket.com/user/xXShiroiKokoroXx/media/l_47eedc36dce2486bb9f296d522e417eb.jpg.html"
+          target="_blank"
+          ><img
+            src="https://i946.photobucket.com/albums/ad303/xXShiroiKokoroXx/l_47eedc36dce2486bb9f296d522e417eb.jpg"
+            border="0"
+            alt="cat photo l_47eedc36dce2486bb9f296d522e417eb.jpg"
+        /></a>
+        <h2>,</h2>
+        <a
+          href="https://s273.photobucket.com/user/PDMRGM/media/Lion-10312.jpg.html"
+          target="_blank"
+          ><img
+            class="lion"
+            src="https://i273.photobucket.com/albums/jj232/PDMRGM/Lion-10312.jpg"
+            border="0"
+            alt="LION photo Lion-10312.jpg"
+        /></a>
+        <h2>,</h2>
+
+        <a
+          href="https://s759.photobucket.com/user/colwindy/media/460.jpg.html"
+          target="_blank"
+          ><img
+            src="https://i759.photobucket.com/albums/xx234/colwindy/460.jpg"
+            border="0"
+            alt="cat photo 460.jpg"
+        /></a>
+        <h2>,</h2>
+        <a
+          href="https://s88.photobucket.com/user/chiirunyanko/media/photos/bento011.jpg.html"
+          target="_blank"
+          ><img
+            src="https://i88.photobucket.com/albums/k187/chiirunyanko/photos/bento011.jpg"
+            border="0"
+            alt="cat photo bento011.jpg"
+        /></a>
+        <h1>]</h1>
+      </div>
+    </div>
+
+    <pre><code class="typescript codeblock">
+        function findLargest(numbers: number[]) {
+          let max = numbers[0];
+          for (let num of numbers) {
+            if (num > max) {
+              max = num;
+            }
+          }
+          return max;
+        }
+        
+        console.log(findLargest([1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]));
+        
+    </code></pre>
+
+    <div class="interaction">
+      <button class="execute">
+        execute
+      </button>
+
+      <form action="#">
+        enter your own numbers if you wish
+
+        <input type="text" />
+        <input type="submit" />
+      </form>
+    </div>
+
+    <a
+      href="https://s1162.photobucket.com/user/PhotoGrapher39/media/cheetah-picture.jpg.html"
+      target="_blank"
+      ><img class="cheetah_pic"
+        src="https://i1162.photobucket.com/albums/q535/PhotoGrapher39/cheetah-picture.jpg"
+        border="0"
+        alt="Cheetah photo cheetah-picture.jpg"
+    /></a>
+
+    <script src="app.js"></script>
+  </body>
+</html>
