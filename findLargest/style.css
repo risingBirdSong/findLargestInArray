@@ -9,10 +9,11 @@
 }
 
 html {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: bisque;
 }
 
-.intro h1{
+.intro h1 {
   font-size: 300px;
 }
 
@@ -26,17 +27,18 @@ html {
   font-size: 100px;
 }
 
-.intro h1, h2, h3 {
-  opacity: .7;
+.intro h1,
+h2,
+h3 {
+  opacity: 0.7;
 }
 
-.cat_pics{
+.cat_pics {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: baseline;
   height: 22em;
-  
 }
 
 .cat_pics * {
@@ -46,7 +48,7 @@ html {
 }
 
 .cat_pics img {
-  border : 2px solid goldenrod;
+  border: 2px solid goldenrod;
   padding: 7px;
   border-radius: 7px;
 }
@@ -58,9 +60,9 @@ img {
   height: 100px;
 }
 
-
 .codeblock {
   font-size: xx-large;
+  position: relative;
 }
 
 .interaction {
@@ -73,7 +75,7 @@ img {
   align-items: center;
   font-size: xx-large;
   color: purple;
-  font-family: Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .interaction button {
@@ -83,30 +85,86 @@ img {
   color: purple;
   font-size: large;
   margin-right: 10px;
-
 }
 
-.interaction button, form{
-border : gold 2px solid;
-padding: 20px;
-border-radius: 5px;
-font-family: Georgia, 'Times New Roman', Times, serif;
+.interaction button,
+form {
+  border: gold 2px solid;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.interaction input{
+.interaction input {
   border-radius: 5px;
   background-color: bisque;
   height: 2.5em;
 }
 
-.cheetah_pic {
+/* 
+when the cheetah was outside of the code block */
+/* .cheetah_pic {
   position: absolute;
   width: 25%;
   height: 25%;
   transform: scaleX(-1);
   margin-top: -32%;
   margin-left: 65%;
-  border : 3px solid khaki;
+  border: 3px solid khaki;
   padding: 7px;
   border-radius: 7px;
+} */
+
+.cheetah_pic {
+  position: absolute;
+  /* width: 25%; */
+  height: 35%;
+  margin-left: 55%;
+  margin-top: -25%;
+  transform: scaleX(-1);
+
+}
+
+.dynamic {
+  width: 100%;
+  background-color: darkgoldenrod;
+  height: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+
+.output_array {
+  background-color: khaki;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.array {
+  margin: 0 auto;
+  /* width: fit-content; */
+  padding: 5px;
+}
+
+
+
+.inside_array {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+}
+
+.inside_array p {
+  font-size: xx-large;
+}
+
+.output_array h1 {
+  font-size: 80px;
+  height: 100%;
 }
