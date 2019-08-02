@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Document : for educational purposes only! Just for the sake of learning
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/default.min.css"
+      href="shades-of-purple.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  </head>
+  <body>
+    <link href="shades-of-purple.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
+    <div class="intro">
+      <h3 class="intro_headline">Find Largest</h3>
+      <div class="cat_pics">
+        <h1>[</h1>
+
+        <a
+          href="https://s286.photobucket.com/user/kibalover481397/media/animales004.jpg.html"
+          target="_blank"
+          ><img
+            src="https://i286.photobucket.com/albums/ll84/kibalover481397/animales004.jpg"
+            border="0"
+            alt="cat photo animales004.jpg"
+        /></a>
+        <h2>,</h2>
+        <a
+          href="https://s946.photobucket.com/user/xXShiroiKokoroXx/media/l_47eedc36dce2486bb9f296d522e417eb.jpg.html"
+          target="_blank"
+          ><img
+            src="https://i946.photobucket.com/albums/ad303/xXShiroiKokoroXx/l_47eedc36dce2486bb9f296d522e417eb.jpg"
+            border="0"
+            alt="cat photo l_47eedc36dce2486bb9f296d522e417eb.jpg"
+        /></a>
+        <h2>,</h2>
+        <a
+          href="https://s273.photobucket.com/user/PDMRGM/media/Lion-10312.jpg.html"
+          target="_blank"
+          ><img
+            class="lion"
+            src="https://i273.photobucket.com/albums/jj232/PDMRGM/Lion-10312.jpg"
+            border="0"
+            alt="LION photo Lion-10312.jpg"
+        /></a>
+        <h2>,</h2>
+
+        <a
+          href="https://s759.photobucket.com/user/colwindy/media/460.jpg.html"
+          target="_blank"
+          ><img
+            src="https://i759.photobucket.com/albums/xx234/colwindy/460.jpg"
+            border="0"
+            alt="cat photo 460.jpg"
+        /></a>
+        <h2>,</h2>
+        <a
+          href="https://s88.photobucket.com/user/chiirunyanko/media/photos/bento011.jpg.html"
+          target="_blank"
+          ><img
+            src="https://i88.photobucket.com/albums/k187/chiirunyanko/photos/bento011.jpg"
+            border="0"
+            alt="cat photo bento011.jpg"
+        /></a>
+        <h1>]</h1>
+      </div>
+    </div>
+
+    <div class="wrapcode">
+      <pre><code class="typescript codeblock">
+        let allTheNumbers : number[] = [];
+          function findLargest(numbers: number[]) {
+            let max = numbers[0];
+            for (let num of numbers) {
+              if (num > max) {
+                max = num;
+              }
+              allTheNumbers.push(num);
+            }
+            return max;
+          }
+          
+          console.log(findLargest([1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]));
+  
+        </code></pre>
+
+      <a
+        href="https://s1162.photobucket.com/user/PhotoGrapher39/media/cheetah-picture.jpg.html"
+        target="_blank"
+        ><img
+          class="cheetah_pic"
+          src="https://i1162.photobucket.com/albums/q535/PhotoGrapher39/cheetah-picture.jpg"
+          border="0"
+          alt="Cheetah photo cheetah-picture.jpg"
+      /></a>
+    </div>
+
+    <div class="cloud_of_text show" id="my_cloud" style="display: none">
+      <p>
+        please enter your values in either of two formats : <br />
+        a) as comma separated numbers. like : 1,2,3 <br />
+        b) or in array format. like [1,2,3]
+      </p>
+    </div>
+
+    <div class="interaction">
+      <img class="grass_left" src="images/grass2.jpeg" alt="image of grass" />
+
+      <button class="reveal">
+        reveal
+      </button>
+
+      <form action="#" class="user_to_add_own_numbers">
+        enter your own numbers if you wish
+
+        <input type="text" />
+        <input type="submit" class="submitme" />
+      </form>
+
+      <img class="grass_right" src="images/grass5.jpeg.jpg" alt="" />
+    </div>
+
+    <!-- TODO come back later and set this back to style="display: none", it's too annoying now -->
+    <div class="toggling">
+      <div class="hold_several_children_for_sake_image">
+        <div class="intro_and_btn">
+          <div class="default">
+            <pre>
+              <code>
+                    //in case you don't enter your own numbers, this array will run;
+                    let defaultArray = [4,6,3,-1,9,12,5,1,13,67,-44,99];
+                  </code>
+                </pre>
+          </div>
+
+          <div class="btn_hold">
+            <button class="begin">
+              begin
+            </button>
+          </div>
+        </div>
+
+        <div class="dynamic">
+          <h1 class="popup">
+            new max number!
+          </h1>
+          <h1 class="current_max">
+            current max : <span class="max_target"></span>
+          </h1>
+          <h1 class="current_numb">
+            current number : <span class="current_target"></span>
+          </h1>
+        </div>
+
+        <div class="all_numbers">
+          <h1>
+            let allTheNumbers : number [] =
+          </h1>
+        </div>
+      </div>
+
+      <div class="output_array">
+        <h1 class="array opening_bracket">[</h1>
+        <div class="array inside_array"></div>
+        <h1 class="array closing_bracket">]</h1>
+      </div>
+
+      <div class="notes ">
+        <div>
+          <p>note : numbers in red have been previous max numbers</p>
+        </div>
+
+        <div>
+          <button class="reset">
+            reset
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <a
+      href="https://s1162.photobucket.com/user/PhotoGrapher39/media/cheetah-picture.jpg.html"
+      target="_blank"
+      ><img
+        class="cheetah_pic"
+        src="https://i1162.photobucket.com/albums/q535/PhotoGrapher39/cheetah-picture.jpg"
+        border="0"
+        alt="Cheetah photo cheetah-picture.jpg"
+    /></a> -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
