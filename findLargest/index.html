@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>
+      Document : for educational purposes only! Just for the sake of learning
+    </title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
@@ -81,20 +83,25 @@
       </div>
     </div>
 
-    <pre><code class="typescript codeblock">
-        function findLargest(numbers: number[]) {
-          let max = numbers[0];
-          for (let num of numbers) {
-            if (num > max) {
-              max = num;
+    <div class="wrapcode">
+      <pre><code class="typescript codeblock">
+        let allTheNumbers : number[] = [];
+          function findLargest(numbers: number[]) {
+            let max = numbers[0];
+            for (let num of numbers) {
+              if (num > max) {
+                max = num;
+              }
+              allTheNumbers.push(num);
             }
+            return max;
           }
-          return max;
-        }
-        
-        console.log(findLargest([1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]));
+          
+          console.log(findLargest([1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]));
+  
+        </code></pre>
 
-        <a
+      <a
         href="https://s1162.photobucket.com/user/PhotoGrapher39/media/cheetah-picture.jpg.html"
         target="_blank"
         ><img
@@ -103,34 +110,89 @@
           border="0"
           alt="Cheetah photo cheetah-picture.jpg"
       /></a>
-        
-    </code></pre>
+    </div>
+
+    <div class="cloud_of_text show" id="my_cloud" style="display: none">
+      <p>
+        please enter your values in either of two formats : <br />
+        a) as comma separated numbers. like : 1,2,3 <br />
+        b) or in array format. like [1,2,3]
+      </p>
+    </div>
 
     <div class="interaction">
-      <button class="execute">
-        execute
+      <img class="grass_left" src="images/grass2.jpeg" alt="image of grass" />
+
+      <button class="reveal">
+        reveal
       </button>
 
-      <form action="#">
+      <form action="#" class="user_to_add_own_numbers">
         enter your own numbers if you wish
 
         <input type="text" />
-        <input type="submit" />
+        <input type="submit" class="submitme" />
       </form>
+
+      <img class="grass_right" src="images/grass5.jpeg.jpg" alt="" />
     </div>
 
-    <div class="dynamic">
-      <h1 class="current_max">
-        current max : 5 
-      </h1>
-      <h1 class="current_numb">
-       current number :  <span class="current_target">5</span>
-      </h1>
-    </div>
-    <div class="output_array">
-      <h1 class="array opening_bracket">[</h1>
-      <div class="array inside_array"></div>
-      <h1 class="array closing_bracket">]</h1>
+    <!-- TODO come back later and set this back to style="display: none", it's too annoying now -->
+    <div class="toggling">
+      <div class="hold_several_children_for_sake_image">
+        <div class="intro_and_btn">
+          <div class="default">
+            <pre>
+              <code>
+                    //in case you don't enter your own numbers, this array will run;
+                    let defaultArray = [4,6,3,-1,9,12,5,1,13,67,-44,99];
+                  </code>
+                </pre>
+          </div>
+
+          <div class="btn_hold">
+            <button class="begin">
+              begin
+            </button>
+          </div>
+        </div>
+
+        <div class="dynamic">
+          <h1 class="popup">
+            new max number!
+          </h1>
+          <h1 class="current_max">
+            current max : <span class="max_target"></span>
+          </h1>
+          <h1 class="current_numb">
+            current number : <span class="current_target"></span>
+          </h1>
+        </div>
+
+        <div class="all_numbers">
+          <h1>
+            let allTheNumbers : number [] =
+          </h1>
+        </div>
+      </div>
+
+      <div class="output_array">
+        <h1 class="array opening_bracket">[</h1>
+        <div class="array inside_array"></div>
+        <h1 class="array closing_bracket">]</h1>
+      </div>
+
+      <div class="notes ">
+        <div>
+          <p>note : numbers in red have been previous max numbers</p>
+        </div>
+
+        <div>
+          <button class="reset">
+            reset
+          </button>
+        </div>
+      </div>
     </div>
 
     <!-- <a
