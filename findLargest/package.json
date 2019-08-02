@@ -4,11 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy" : "gh-pages -d dist"
   },
   "author": "",
   "license": "MIT",
+  "homepage": "https://risingbirdsong.github.io/findlargestinarray",
   "dependencies": {
-    "@types/jquery": "^3.3.30"
+    "@types/jquery": "^3.3.30",
+    "gh-pages": "^2.1.0"
   }
 }
